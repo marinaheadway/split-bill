@@ -1,0 +1,84 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #6C5F5B;
+    }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #527853;
+    width: 610px;
+    height: 700px;
+    border-radius: 40px;
+    color: #F9E8D9;
+}    
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    margin: 20px;
+    }
+
+h1 {
+     align-self: center;
+    font-family: 'Montserrat', sans-serif;
+       }
+
+input {
+padding: 10px;
+font-family: 'Montserrat', sans-serif;
+}
+
+#addVet {
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFF78A;
+}
+
+#btn {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF8F8F;
+    margin-top: 10px;
+}
+
+#health {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#showTotalAmount {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+#billMonth, #billWeek, #billDay {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #F9E8D9;
+    padding: 5px;
+    margin: 5px;
+    background-color: #EE7214;
+    font-family: 'Montserrat', sans-serif;
+   }
+
+   @media all and (max-width:800px){
+    #container {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+   }

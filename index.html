@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="container">
+         <h1>Наши расходы на животных</h1>
+         <form>
+            <p class="item">🍗🥩Корм</p>
+            <span>$
+            <input type="text" id="food" placeholder="Сумма корма"></span>
+            <p class="item">💩Наполнитель</p>
+            <span>$
+            <input type="text" id="tw" placeholder="Сумма наполнителя"></span>
+            <p class="item">🐶Игрушки</p>
+            <span>$
+            <input type="text" id="toy" placeholder="Сумма развлекашек"></span>
+            <p>💊💊Сколько раз посещали ветеринара в этом месяце?</p>
+            <button id="addVet">Количество визитов</button>
+            <select id="health">
+               <option disabled>Выберите количество визитов</option>
+               <option value ="0" selected>Пес здоров!</option>
+               <option value ="1000">Сухой нос 1 раз.</option>
+               <option value ="2000">Сухой нос 2 раза.</option>
+               <option value ="3000">Сухой нос 3 раза.</option>
+            </select>
+            <button id="btn">Рассчитать!</button>
+         </form>
+         <div id="showTotalAmount">
+            <div id="billMonth">
+               <p>Итого за месяц</p>
+               <span id="totalBillMonth"></span>
+               <span>рублей</span>
+            </div>
+            <div id="billWeek">
+               <p>Итого за неделю</p>
+               <span id="totalBillWeek"></span>
+               <span>рублей</span>
+            </div>
+            <div id="billDay">
+               <p>Итого за один день</p>
+               <span id="totalBillDay"></span>
+               <span>рублей</span>
+            </div>
+         </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="index.js"></script>
+   </body>
+</html>
